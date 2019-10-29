@@ -1,0 +1,17 @@
+#:kivy 1.11.1
+#:include home_screen.kv
+#:include results_screen.kv
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+
+        HomeScreen:
+            id: home_screen
+            name: 'home_screen'
+            
+            
+        SettingsScreen:
+            id: results_screen
+            name: 'results_screen'

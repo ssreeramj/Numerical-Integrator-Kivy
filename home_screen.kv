@@ -1,0 +1,62 @@
+#:kivy 1.11
+#:import utils kivy.utils
+
+
+<HomeScreen>:
+    BoxLayout:
+        pos_hint: {'y': 0.8, 'center_x': 0.5}
+        size_hint_y: 0.2
+
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex('#8C0070')
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        Label: 
+            text: 'Numerical Integrator'
+            font_size: 25
+            bold: True
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 40, 10
+        
+        pos_hint: {'center_x': 0.5, 'y': 0}  
+        size_hint: 1, 0.8
+
+        canvas.before:
+            Color:
+                rgb: utils.get_color_from_hex('#D3CED2')
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        
+        TextInput:
+            id: values
+            name: 'values'
+            hint_text: 'Enter each value on a seperate line'
+        
+        TextInput:
+            id: delta_h
+            name: 'delta_h'
+            hint_text: 'Delta H'
+            multiline: False
+            size_hint_y: 0.15
+            # input_filter: 'float'
+
+        BoxLayout:
+            size_hint: 0.3, 0.3
+            pos_hint: {'center_x': 0.5}
+            
+            Button:
+                id: submit
+                text: 'Submit'
+                size_hint_y: 0.5
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#4A4348')
+                background_down: '#8C0070'
+                on_press: self.background_color = utils.get_color_from_hex('#8C0070')
+                on_release: app.get_answer(values.text, delta_h.text)

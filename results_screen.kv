@@ -1,0 +1,35 @@
+#:kivy 1.11
+#:import utils kivy.utils
+
+<SettingsScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+        size_hint: 0.9, 0.3
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        canvas:
+            Color: 
+                rgb: utils.get_color_from_hex('#D3CED2')
+            Rectangle:
+                size: root.size
+                pos: root.pos
+    
+        Label:
+            id: answer
+            text: ''
+            font_size: 30
+            color: utils.get_color_from_hex('#4A4348') 
+            
+
+        Button:
+            id: go_back
+            text: 'Back'
+            size_hint: 0.4, 0.4
+            pos_hint: {'center_x': 0.5}
+            background_normal: ''
+            background_color: utils.get_color_from_hex('#4A4348')
+            background_down: '#BA0095'
+            on_press: self.background_color = utils.get_color_from_hex('#BA0095')
+            on_release: app.change_screen('home_screen')
