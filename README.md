@@ -10,7 +10,7 @@ This a small desktop application which gives us the approximate area under curve
 pip3 install -r requirements.txt \
 python3 main.py
 
-#### Steps to run the on Windows
+#### Steps to run the application on Windows
 pip install -r requirements.txt \
 python main.py
 
