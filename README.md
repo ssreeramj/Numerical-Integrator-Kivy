@@ -2,9 +2,9 @@
 
 This a small desktop application which gives us the approximate area under curve formed by points given by the user.
 
-![Image of mainscreen] (images/homepage.png)
-![Image of mainscreen2] (images/homepage2.png)
-![Image of resultscreen] (images/results.png)
+![Image of mainscreen] (/images/homepage.png)
+![Image of mainscreen2] (/images/homepage2.png)
+![Image of resultscreen] (/images/results.png)
 
 
 #### Steps to run the application on Linux
