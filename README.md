@@ -2,9 +2,9 @@
 
 This a small desktop application which gives us the approximate area under curve formed by points given by the user.
 
-![Image of mainscreen] (images/homepage.png)
-![Image of mainscreen2] (images/homepage2.png)
-![Image of resultscreen] (images/results.png)
+![alt text] ([images/homepage.png](https://github.com/ssreeramj/Numerical-Integrator-Kivy/blob/master/images/homepage.png))
+![alt text] ([images/homepage2.png](https://github.com/ssreeramj/Numerical-Integrator-Kivy/blob/master/images/homepage2.png))
+![alt text] ([images/results.png](https://github.com/ssreeramj/Numerical-Integrator-Kivy/blob/master/images/results.png))
 
 
 #### Steps to run the application on Linux
